@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is the start</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            color: white;
+
+            /* Change this image */
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Dark overlay */
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.7);
+            z-index: -1;
+        }
+
+        header {
+            background: rgba(0,0,0,0.85);
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #444;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 3px;
+        }
+
+        .content {
+            flex: 1;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 40px;
+        }
+
+        .puzzle-box {
+            background: rgba(0,0,0,0.8);
+            max-width: 800px;
+            width: 100%;
+
+            padding: 40px;
+            border-radius: 15px;
+
+            text-align: center;
+
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+
+        .puzzle-box h2 {
+            margin-bottom: 20px;
+        }
+
+        .puzzle-box p {
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            background: rgba(0,0,0,0.85);
+            text-align: center;
+            padding: 15px;
+            border-top: 2px solid #444;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>THE ENIGMA PROJECT</h1>
+</header>
+
+<div class="content">
+    <div class="puzzle-box">
+
+        <h2>The start of something pointless but fun</h2>
+
+        <p>
+            This site is designed as a homage to sites like Weffriddles and NotPron except I'm not as smart as the peaople who made them so this isn't going to be as good
+        </p>
+		<br>
+        <p>
+            I really do you hope you enjoy it. There are no prizes for completing it so if you cheat you have quite litterally gained nothing
+        </p>
+
+    </div>
+</div>
+<div class="content">
+    <div class="puzzle-box">
+
+        <h2>Put thepassword in the url</h2>
+
+    </div>
+</div>
+
+<footer>
+    © 2026 The Enigma Project by MLB
+</footer>
+
+</body>
+</html>
